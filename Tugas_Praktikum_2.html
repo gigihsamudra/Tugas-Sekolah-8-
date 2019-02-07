@@ -1,0 +1,43 @@
+<html>
+  <head>
+    <title>Tugas Praktikum 2</title>
+  </head>
+    <script LANGUAGE="javascript">
+      function penjumlahan() {
+        var bil1=parseFloat(document.fform.nil1.value);
+        var bil2=parseFloat(document.fform.nil2.value);
+        var hasil = bil1 + bil2;
+        document.fform.hasil.value = hasil;
+      }
+      function pengurangan() {
+        var bil1=parseFloat(document.fform.nil1.value);
+        var bil2=parseFloat(document.fform.nil2.value);
+        var hasil = bil1 - bil2;
+        document.fform.hasil.value = hasil;
+      }
+      function pembagian() {
+        var bil1=parseFloat(document.fform.nil1.value);
+        var bil2=parseFloat(document.fform.nil2.value);
+        var hasil = bil1 / bil2;
+        document.fform.hasil.value = hasil;
+      }
+      function perkalian() {
+        var bil1=parseFloat(document.fform.nil1.value);
+        var bil2=parseFloat(document.fform.nil2.value);
+        var hasil = bil1 * bil2;
+        document.fform.hasil.value = hasil;
+      }
+    </script>
+  <body>
+    <form name="fform">
+     <p>Bil 1 <input type="text" name="nil1"/></p>
+     <p>Bil 2 <input type="text" name="nil2"/></p>
+     <P>Hasil <input type="text" name="hasil" disabled="true" value=""/></P>
+    <br>
+     <input type="button" value="+" onClick="penjumlahan()"/>
+     <input type="button" value="-" onclick="pengurangan()"/>
+     <input type="button" value="/" onclick="pembagian()"/>
+     <input type="button" value="*" onclick="perkalian()"/>
+    </form>
+  </body>
+</html>
